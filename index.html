@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projeto 90 Dias — Do Iniciante ao Intermediário</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">Projeto 90</span>
+  <a class="nav-cta" href="#cta">Quero o Ebook</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-num">90</div>
+  <div class="hero-inner">
+    <span class="hero-eyebrow">Continuação de Força do Zero</span>
+    <h1 class="hero-title">
+      PROJETO<br>
+      <span>90</span> DIAS
+    </h1>
+    <p class="hero-desc">
+      Você criou o hábito. Aprendeu a técnica. Provou para si mesmo que é capaz.<br>
+      Agora é hora de evoluir de verdade — do iniciante ao intermediário em 12 semanas.
+    </p>
+
+    <div class="hero-fases">
+      <div class="fase-pill">
+        <span class="dot bg-volume"></span>
+        Fase 1 — Volume
+      </div>
+      <div class="fase-pill">
+        <span class="dot bg-strength"></span>
+        Fase 2 — Força
+      </div>
+      <div class="fase-pill">
+        <span class="dot bg-composition"></span>
+        Fase 3 — Composição
+      </div>
+    </div>
+
+    <div class="hero-cta-group">
+      <a class="btn-primary" href="#cta">Começar agora →</a>
+      <a class="btn-ghost" href="#conteudo">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M7 5v4M7 9.5v.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        Ver o conteúdo
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="strip-item reveal">
+    <div class="strip-num">90</div>
+    <div class="strip-label">Dias de programa</div>
+  </div>
+  <div class="strip-item reveal">
+    <div class="strip-num">3</div>
+    <div class="strip-label">Fases progressivas</div>
+  </div>
+  <div class="strip-item reveal">
+    <div class="strip-num">15</div>
+    <div class="strip-label">Capítulos completos</div>
+  </div>
+  <div class="strip-item reveal">
+    <div class="strip-num">100%</div>
+    <div class="strip-label">Baseado em ciência</div>
+  </div>
+</div>
+
+<!-- FASES -->
+<section class="fases-section">
+  <div class="section-container">
+    <span class="section-eye reveal">Como funciona</span>
+    <h2 class="section-title reveal">Três fases.<br>Um resultado.</h2>
+    <p class="section-sub reveal">
+      Cada fase tem um objetivo específico, treinos planejados e progressão calculada.
+      Não é aleatório — é periodização real, adaptada para quem está saindo do nível iniciante.
+    </p>
+
+    <!-- Barra de progresso das fases (signature element) -->
+    <div class="fase-progress-wrap reveal" id="fase-progress">
+      <div class="fase-progress-bar">
+        <div class="fpb-seg"><div class="fpb-fill bg-volume" id="fp1"></div></div>
+        <div class="fpb-seg"><div class="fpb-fill bg-strength" id="fp2"></div></div>
+        <div class="fpb-seg"><div class="fpb-fill bg-composition" id="fp3"></div></div>
+      </div>
+      <div class="fase-progress-labels">
+        <div class="fpl-item text-volume"><span class="fpl-dot bg-volume"></span>Dias 1–30 — Volume</div>
+        <div class="fpl-item text-strength"><span class="fpl-dot bg-strength"></span>Dias 31–60 — Força</div>
+        <div class="fpl-item text-composition"><span class="fpl-dot bg-composition"></span>Dias 61–90 — Composição</div>
+      </div>
+    </div>
+
+    <div class="fases-track reveal">
+      <!-- Fase 1 -->
+      <div class="fase-card">
+        <div class="fase-card-accent bg-volume"></div>
+        <div class="fase-card-days text-volume">Dias 1 — 30</div>
+        <div class="fase-card-num text-volume">01</div>
+        <div class="fase-card-nome">Volume</div>
+        <p class="fase-card-desc">
+          Acumulação de volume muscular. Mais séries, mais repetições, mais tempo sob tensão.
+          O músculo aprende que precisa crescer para aguentar o estámulo.
+        </p>
+        <div class="fase-specs">
+          <div class="fase-spec">4 dias de treino por semana</div>
+          <div class="fase-spec">4 × 12 repetições · 60–70% 1RM</div>
+          <div class="fase-spec">Descanso 60–90s entre séries</div>
+          <div class="fase-spec">Deload na semana 4</div>
+        </div>
+      </div>
+
+      <!-- Fase 2 -->
+      <div class="fase-card">
+        <div class="fase-card-accent bg-strength"></div>
+        <div class="fase-card-days text-strength">Dias 31 — 60</div>
+        <div class="fase-card-num text-strength">02</div>
+        <div class="fase-card-nome">Força</div>
+        <p class="fase-card-desc">
+          Intensidade máxima nos compostos. Supino, agachamento, terra e desenvolvimento
+          pesados. O sistema nervoso aprende a recrutar o músculo ao máximo.
+        </p>
+        <div class="fase-specs">
+          <div class="fase-spec">4 dias de treino por semana</div>
+          <div class="fase-spec">5 × 5 repetições · 80–85% 1RM</div>
+          <div class="fase-spec">Descanso 2–3 min nos compostos</div>
+          <div class="fase-spec">Deload na semana 8</div>
+        </div>
+      </div>
+
+      <!-- Fase 3 -->
+      <div class="fase-card">
+        <div class="fase-card-accent bg-composition"></div>
+        <div class="fase-card-days text-composition">Dias 61 — 90</div>
+        <div class="fase-card-num text-composition">03</div>
+        <div class="fase-card-nome">Composição</div>
+        <p class="fase-card-desc">
+          Manter a massa construída nas fases anteriores enquanto reduz gordura corporal.
+          Cardio metabólico, circuitos e HIIT integrados ao treino de musculação.
+        </p>
+        <div class="fase-specs">
+          <div class="fase-spec">5 dias de treino por semana</div>
+          <div class="fase-spec">Supersets + HIIT 15–20 min</div>
+          <div class="fase-spec">65–75% 1RM com descanso reduzido</div>
+          <div class="fase-spec">Deload na semana 12</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTEÚDO -->
+<section id="conteudo">
+  <div class="section-container">
+    <span class="section-eye reveal">O que você vai aprender</span>
+    <h2 class="section-title reveal">15 capítulos.<br>Nada supérfluo.</h2>
+    <p class="section-sub reveal">
+      Cada capítulo resolve um problema real de quem está saindo do nível iniciante.
+    </p>
+
+    <div class="content-grid reveal">
+      <div class="content-item">
+        <div class="content-item-num">01</div>
+        <div class="content-item-body">
+          <div class="content-item-title">Por que 90 dias muda tudo</div>
+          <div class="content-item-desc">A ciência da hipertrofia intermediária — o que acontece no seu corpo entre as semanas 5 e 24</div>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="content-item-num">02</div>
+        <div class="content-item-body">
+          <div class="content-item-title">Como o programa funciona</div>
+          <div class="content-item-desc">Periodização linear ondulatória explicada de forma simples com regras claras de progressão</div>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="content-item-num">03</div>
+        <div class="content-item-body">
+          <div class="content-item-title">Avaliação de nível — onde você está</div>
+          <div class="content-item-desc">Testes de força (5RM) para calibrar suas cargas de trabalho e medir sua evolução real</div>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="content-item-num">04</div>
+        <div class="content-item-body">
+          <div class="content-item-title">Fase 1 — Volume (dias 1–30)</div>
+          <div class="content-item-desc">4 treinos completos com exercícios, séries, repetições e dicas de execução para cada dia</div>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="content-item-num">05</div>
+        <div class="content-item-body">
+          <div class="content-item-title">Fase 2 — Força (dias 31–60)</div>
+          <div class="content-item-desc">Método 5×5 nos grandes compostos com protocolo de aquecimento e aumento seguro de carga</div>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="content-item-num">06</div>
+        <div class="content-item-body">
+          <div class="content-item-title">Fase 3 — Composição (dias 61–90)</div>
+          <div class="content-item-desc">Circuitos, supersets e HIIT integrados à definição sem perder os ganhos das fases anteriores</div>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="content-item-num">07</div>
+        <div class="content-item-body">
+          <div class="content-item-title">Nutrição avançada por fase</div>
+          <div class="content-item-desc">Metas calóricas e proteicas específicas para cada fase — superávit, manutenção e déficit</div>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="content-item-num">08</div>
+        <div class="content-item-body">
+          <div class="content-item-title">Suplementação intermediária</div>
+          <div class="content-item-desc">O que realmente vale a pena agora — sem desperdício de dinheiro em produtos inúteis</div>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="content-item-num">09</div>
+        <div class="content-item-body">
+          <div class="content-item-title">Recuperação e deload</div>
+          <div class="content-item-desc">Semanas de descarga, sinais de overtraining e o protocolo de supercompensação</div>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="content-item-num">10</div>
+        <div class="content-item-body">
+          <div class="content-item-title">Técnica avançada dos exercícios</div>
+          <div class="content-item-desc">Lat spread, leg drive, manobra de Valsalva — refinamentos para quem domina o básico</div>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="content-item-num">11</div>
+        <div class="content-item-body">
+          <div class="content-item-title">Como lidar com platôs</div>
+          <div class="content-item-desc">Estratégias para quando força, massa e definição param de progredir — com diagnóstico e solução</div>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="content-item-num">12</div>
+        <div class="content-item-body">
+          <div class="content-item-title">Mentalidade de longo prazo</div>
+          <div class="content-item-desc">Como transformar o treino em identidade permanente — não em resolução de ano novo</div>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="content-item-num">13</div>
+        <div class="content-item-body">
+          <div class="content-item-title">Tabela de cargas — 12 semanas</div>
+          <div class="content-item-desc">Registro completo para 20 exercícios ao longo de todo o programa — a prova do seu progresso</div>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="content-item-num">14</div>
+        <div class="content-item-body">
+          <div class="content-item-title">Controle de medidas e fotos</div>
+          <div class="content-item-desc">Acompanhamento a cada 30 dias com tabelas de medidas corporais e marcos de força</div>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="content-item-num">15</div>
+        <div class="content-item-body">
+          <div class="content-item-title">Seus próximos 180 dias</div>
+          <div class="content-item-desc">O roadmap completo do intermediário ao avançado — o que fazer depois dos 90 dias</div>
+        </div>
+      </div>
+      <div class="content-item content-item--bonus">
+        <div class="content-item-num content-item-num--bonus">+</div>
+        <div class="content-item-body">
+          <div class="content-item-title content-item-title--bonus">Bônus — Continuação de Força do Zero</div>
+          <div class="content-item-desc">Inclui uma carta de transição ligando os 30 dias do guia anterior com os 90 dias deste programa</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUEM É -->
+<section class="para-quem">
+  <div class="section-container">
+    <span class="section-eye reveal">Para quem é este programa</span>
+    <h2 class="section-title reveal">Você está no lugar certo se...</h2>
+    <p class="section-sub reveal">
+      O Projeto 90 Dias foi construído para um perfil específico.<br>
+      Veja se você se encaixa.
+    </p>
+    <div class="pq-grid reveal">
+      <div class="pq-card">
+        <div class="pq-icon">?</div>
+        <div>
+          <div class="pq-title">Completou o Força do Zero</div>
+          <div class="pq-body">Ou treina há pelo menos 4 semanas de forma consistente e já domina os movimentos básicos com segurança.</div>
+        </div>
+      </div>
+      <div class="pq-card">
+        <div class="pq-icon">?</div>
+        <div>
+          <div class="pq-title">Sente que está estagnado</div>
+          <div class="pq-body">Faz os mesmos exercícios com as mesmas cargas e o progresso travou. Você precisa de um novo estámulo.</div>
+        </div>
+      </div>
+      <div class="pq-card">
+        <div class="pq-icon">?</div>
+        <div>
+          <div class="pq-title">Quer resultados visíveis no espelho</div>
+          <div class="pq-body">Já perdeu algum peso ou ganhou um pouco de massa, mas quer ver uma mudança real na composição corporal.</div>
+        </div>
+      </div>
+      <div class="pq-card">
+        <div class="pq-icon">?</div>
+        <div>
+          <div class="pq-title">Tem consistência, falta estrutura</div>
+          <div class="pq-body">Você vai à academia, mas não tem certeza se o que está fazendo é o certo. Quer um plano com lógica e progressão.</div>
+        </div>
+      </div>
+      <div class="pq-card">
+        <div class="pq-icon">?</div>
+        <div>
+          <div class="pq-title">Quer entender o porquê de cada treino</div>
+          <div class="pq-body">Não basta executar — você quer saber o que está acontecendo no seu corpo e por que cada fase existe.</div>
+        </div>
+      </div>
+      <div class="pq-card pq-card--warning">
+        <div class="pq-icon pq-icon--warning">?</div>
+        <div>
+          <div class="pq-title pq-title--warning">Este programa NÃO é para você se...</div>
+          <div class="pq-body">Você nunca treinou na vida. Comece pelo <strong>Força do Zero</strong> — ele foi feito para o dia zero.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section>
+  <div class="section-container">
+    <span class="section-eye reveal">Por que este programa</span>
+    <h2 class="section-title reveal">A diferença<br>que importa.</h2>
+    <p class="section-sub reveal">
+      Existem milhares de planilhas de treino na internet. Aqui está o que torna este diferente.
+    </p>
+    <div class="diff-grid reveal">
+      <div class="diff-card">
+        <div class="diff-num">01</div>
+        <div class="diff-title">Periodização real, não achismo</div>
+        <div class="diff-body">Cada semana tem um objetivo calculado. Volume, intensidade e descanso alternam de forma planejada — o mesmo método usado por atletas de força.</div>
+      </div>
+      <div class="diff-card">
+        <div class="diff-num">02</div>
+        <div class="diff-title">Nutrição integrada ao treino</div>
+        <div class="diff-body">Cada fase tem sua própria estratégia nutricional. Superávit para crescer, manutenção para ganhar força, déficit para definir — com metas reais em números.</div>
+      </div>
+      <div class="diff-card">
+        <div class="diff-num">03</div>
+        <div class="diff-title">Deloads estratégicos incluídos</div>
+        <div class="diff-body">Semanas de descarga planejadas nas semanas 4, 8 e 12. A supercompensação — quando o corpo fica mais forte no descanso — está no protocolo.</div>
+      </div>
+      <div class="diff-card">
+        <div class="diff-num">04</div>
+        <div class="diff-title">Técnica que vai além do básico</div>
+        <div class="diff-body">Lat spread, leg drive, manobra de Valsalva. Os detalhes técnicos que separam quem treina bem de quem treina muito — mas não evolui.</div>
+      </div>
+      <div class="diff-card">
+        <div class="diff-num">05</div>
+        <div class="diff-title">Estratégia para platôs</div>
+        <div class="diff-body">Um capítulo inteiro dedicado ao que fazer quando o progresso trava — com diagnóstico do tipo de platô e solução específica para cada caso.</div>
+      </div>
+      <div class="diff-card">
+        <div class="diff-num">06</div>
+        <div class="diff-title">Tabelas para 90 dias completos</div>
+        <div class="diff-body">Registro de cargas para 20 exercícios em 12 semanas, medidas corporais a cada 30 dias e marcos de força. O histórico que você vai querer mostrar.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-section" id="cta">
+  <div class="cta-inner">
+    <span class="cta-eyebrow reveal">Comece hoje</span>
+    <h2 class="cta-title reveal">90 dias entre<br>você e o próximo nível.</h2>
+    <p class="cta-desc reveal">
+      Você já provou que consegue criar o hábito.<br>
+      Agora é hora de usar esse hábito para evoluir de verdade.
+    </p>
+
+    <div class="price-block reveal">
+      <span class="price-from">R$ 97,00</span>
+      <span class="price-val">R$ 37</span>
+      <span class="price-note">pagamento único · acesso imediato</span>
+    </div>
+
+    <div class="cta-btn-wrap reveal">
+      <a class="btn-cta-main" href="#">
+        Quero o Projeto 90 Dias ?
+      </a>
+      <span class="cta-guarantee">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M7 1L8.73 5.1H13L9.63 7.59L10.85 12L7 9.35L3.15 12L4.37 7.59L1 5.1H5.27L7 1Z" stroke="currentColor" stroke-width="1" fill="none"/>
+        </svg>
+        Satisfação garantida · PDF imediato após compra
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">Projeto 90 Dias</span>
+  <span class="footer-copy">Continuação de Força do Zero · Do iniciante ao intermediário</span>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
